@@ -1,13 +1,14 @@
+#include <MIDI.h>
+
+MIDI_CREATE_DEFAULT_INSTANCE();
+
 /* prototype_1.ino
 *
 * Copyright (C) 2015 Alejandro Simon
 * License: MIT License http://opensource.org/licenses/MIT
 *
 * 4 buttons to trigger 4 notes
-* 1 Potenciometer to change velocity */
-
-#include <MIDI.h>
-MIDI_CREATE_DEFAULT_INSTANCE();
+* 1 Potentiometer to change velocity */
 
 #define CHANNEL 1
 
@@ -23,12 +24,13 @@ const int maxButtons = 4;
 int val = 0;
 
 void setup() {
-  Serial.begin(9600);
-  // initialize the pushbutton pin as an input:
+  // initialise the pushbutton pin as an input:
   pinMode(button1Pin, INPUT);
   pinMode(button2Pin, INPUT);
   pinMode(button3Pin, INPUT);
   pinMode(button4Pin, INPUT);
+  // Initiate MIDI communications, listen to all channels
+  MIDI.begin(MIDI_CHANNEL_OMNI);
 }
 
 void sendNote(byte note, byte velo, byte channel) {
@@ -38,7 +40,7 @@ void sendNote(byte note, byte velo, byte channel) {
 }
 
 void loop() {
-  // Potenciometer
+  // Potentiometer
   val = analogRead(potPin);
   // scale value to [0, 127]
   val = (127 * val)/1023;
