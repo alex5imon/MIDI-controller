@@ -1,11 +1,11 @@
 # MIDI-controller
 
-A simple Arduino MIDI controller experiment. In the [wiki]() you can find step by step how to create a very simple MIDI controller with Arduino UNO.
+A simple Arduino MIDI controller experiment. In the [wiki](https://github.com/alex5imon/MIDI-controller/wiki) you can find step by step how to create a very simple MIDI controller with Arduino UNO.
 
 ## Requirements
 - OSX
 - [Arduino UNO R3](http://arduino.cc/en/Main/arduinoBoardUno) + latest [Arduino IDE](http://arduino.cc/download_handler.php?f=/arduino-1.6.0-macosx.zip)
-- Optional: additional hardware (bradboard, buttons, wires...)
+- Optional: additional hardware (breadboard, buttons, wires...)
 
 ## Credits
 - [Dimitri Diakopoulos](http://www.dimitridiakopoulos.com/hiduino) for his [Hiduino](https://github.com/ddiakopoulos/hiduino) firmware
