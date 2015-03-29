@@ -12,4 +12,4 @@ A simple Arduino MIDI controller experiment. In the [wiki](https://github.com/al
 - Arduino for the [MIDI library](https://github.com/FortySevenEffects/arduino_midi_library/releases/download/4.2/Arduino_MIDI_Library_v4.2.zip)
 
 ## License
-This project is license under the MIT license.
+This project is licensed under the MIT license.
